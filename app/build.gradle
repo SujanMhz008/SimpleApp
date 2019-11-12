@@ -33,4 +33,7 @@ dependencies {
 
     //For ViewTaber
     implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
 }

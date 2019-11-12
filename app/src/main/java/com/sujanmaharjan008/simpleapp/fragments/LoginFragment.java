@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.sujanmaharjan008.simpleapp.R;
 import com.sujanmaharjan008.simpleapp.activities.MainActivity;
+import com.sujanmaharjan008.simpleapp.activities.NavigationActivity;
 import com.sujanmaharjan008.simpleapp.model.UserLogin;
 import com.sujanmaharjan008.simpleapp.model.Users;
 
@@ -71,8 +72,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
         if(status){
 
-            Intent intent = new Intent(getActivity(), MainActivity.class);
-
+            Intent intent = new Intent(getActivity(), NavigationActivity.class);
+            startActivity(intent);
             Toast.makeText(getActivity(), "Welcome " + savedUsername, Toast.LENGTH_SHORT).show();
         }
         else{
